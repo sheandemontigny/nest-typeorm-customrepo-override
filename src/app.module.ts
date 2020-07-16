@@ -6,11 +6,11 @@ import { AccountModule } from './account.module';
   imports: [
     TypeOrmModule.forRoot({
       type: 'postgres',
-      host: 'localhost',
+      host: 'postgres',
       port: 5432,
       username: 'root',
       password: 'root',
-      database: 'database',
+      database: 'demo',
       autoLoadEntities: true,
       synchronize: true,
     }),
